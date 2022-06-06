@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: "Roboto Mono";
+    font-size: 20px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+body{
+    color: red;
+    min-height :100%;
+    display:flex ;
+    flex-direction :column ;    
+}
+
+html{
+    height :100%
+}
+
+
+.container-fluid{
+    padding: 0;
+}
+
+.navbar-brand{
+    font-family: "Concert One";
+}
+
+.navbar-nav > li{
+    padding-left: 100px;
+}
+
+.navbar-nav > li > a {
+    text-decoration: none;
+}
+
+.nav-link::after{
+    content:'';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;;
+    margin-top: 1px;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+.btn{
+    background: none;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: 0.6s;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:before{
+    content:'';
+    /*display: block;*/
+    background: rgba(255, 255, 255, 0.5);
+    width: 60px;
+    height: 100%;
+    opacity: 0.5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skew(-15deg);
+}
+
+.btn:after{
+    content: "";
+     /*display: block; */
+    background: rgba(255, 255, 255, 0.2);
+    width: 30px;
+    height: 100%;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(-100px) skew(-15deg);
+}
+
+.btn:hover{
+    background: white;
+    cursor:pointer;
+}
+
+.btn:hover:before{
+    transform: translateX(-300px) skew(-15deg);
+    opacity: 0.6;
+    transition: 0.7s;
+}
+
+.btn:hover:after{
+    transform: translateX(-300px) skew(-15deg);
+    opacity: 1;
+    transition: 0.7s;
+}
+
+/* ------------------ Banniere / Main ------------------ */
+
+.banner{
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.banner{
+    /* width: 100%;
+    max-width: 100%; */
+    height: 100%;
+    min-height: 100%;
+    background-image: url("../../assets/image/fond_body.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.banner{
+    color: white;
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* ------------------ Footer ------------------ */
+.footer{
+    margin-top :auto ;
+}
+.inner-footer{
+    text-align: center;
+}
+.footer-items{
+    padding: 10px;
+}
+
+.footer-items a{
+    margin-left: 20px;
+    color: white;
+}
+
+.facebook:hover{
+    color: #4388EB;
+}
+
+.instagram:hover{
+    color: #EB4C54;
+}
+
+.twitter:hover{
+    color: #46A3EB;
+}
+
+.youtube:hover{
+    color:red;
+}
+
+/* ----------------- Formulaire inscription --------------- */
+
+.titre{
+    text-align: center;
+    font-size: 80%;
+}
+
+.case{
+    margin-bottom: 20px ;
+    width: 100%;
+}
+
+.formulaire_etudiant{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: auto;
+    border: solid 1px;
+    border-radius:20px; 
+    background-color : rgba(52, 58, 64, 0.9) ; 
+    color:rgb(255, 255, 255); 
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow:20px 10px 30px 4px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70%;
+    padding: 20px;
+}
+.departement{
+    color: rgb(151, 151, 151);
+}
+
+.btn_valider, .btn_reni{
+    background: none;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: 0.6s;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.bouton_formulaire{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#btn_valider:hover{
+    background-color: #218838;
+}
+
+#btn_reni:hover{
+    background-color: #C82333;
+}
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CESI ton stage</title>
+    <link rel="stylesheet" href="../../assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../inscription/formulaire_tuteur/style_formulaire_tuteur.css">
+
+</head>
+
+<body>
+    <!------ NAVBAR ------>
+    <header class="container-fluid header">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">CESI ton stage</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../../site.php"><i class="fas fa-home"></i>  Acceuil</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fas fa-search"></i>  Offre</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="../../offre/ajouter_offre/ajouter_page.php"><i class="fas fa-plus-square"></i>  Ajoutez une offre</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <!--<form action="./inscription/inscription.html">
+              <button class="btn btn1">S'inscrire</button>
+            </form>-->
+                    <form action="../../connection/connection_page.php">
+                        <button class="btn btn2">Se connecter</button>
+                    </form>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!------ Banniere  --->
+    <div class="container banner">
+        <div class="row justify-content-center">
+            <form action="formulaire_tuteur.php" method="POST">
+                <div class="formulaire_tuteur">
+
+                    <legend>
+                        <h1 class="titre">Formulaire tuteur</h1>
+                    </legend>
+                    <br>
+
+                    <!-- Informations à compléter -->
+
+                    <legend>
+                        <h2 class="titre">Quel est votre promotion assignées ?</h2>
+                    </legend>
+
+                    <select class="case" id="promotion" name="promotion" required>
+            <option>Première année </option>
+            <option>Deuxième année </option>
+            <option>Troisième année </option>
+            <option>Quatrième année </option>
+            <option>Cinquième année </option>
+          </select>
+
+                    <legend>
+                        <h2 class="titre">Quel est votre centre ?</h2>
+                    </legend>
+
+                    <select class="case" id="centre" name="centre" required>
+            <option >Aix-en-Provence</option>
+            <option>Angoulême</option>
+            <option>Arras</option>
+            <option>Bordeaux</option>
+            <option>Brest</option>
+            <option>Caen</option>
+            <option>Châteauroux</option>
+            <option>Dijon</option>
+            <option>Grenoble</option>
+            <option>La Rochelle</option>
+            <option>Le Mans</option>
+            <option>Lille</option>
+            <option>Lyon</option>
+            <option>Montpellier</option>
+            <option>Nancy</option>
+            <option>Nantes</option>
+            <option>Nice</option>
+            <option>Orléans</option>
+            <option>Paris Nanterre</option>
+            <option>Pau</option>
+            <option>Reims</option>
+            <option>Rouen</option>
+            <option>Saint-Nazaire</option>
+            <option>Strasbourg</option>
+            <option>Toulouse</option>
+          </select>
+
+                    <input type="text" placeholder="Prénom" class="case" name="prenom" required>
+                    <input type="text" placeholder="Nom" class="case" name="nom" required>
+
+                    <!-- Rubrique d'inscription -->
+                    <legend>
+                        <h2 class="titre">Inscrivez-vous</h2>
+                    </legend>
+                    <input type="email" placeholder="Adresse mail" class="case" name="login" required>
+                    <input type="password" class="case" placeholder="Mot de passe (8 caractère minimum)" id="pass" name="password" minlength="8" required>
+
+                    <div class="bouton_formulaire">
+                        <button class="btn_valider btn-default btn-outline-success">Valider</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <br><br><br>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer bg-dark">
+        <div class="container inner-footer">
+            <div class="footer-items">
+                <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram instagram fa-2x"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter twitter fa-2x"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube youtube fa-2x"></i></a>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 text-light">© 2021 Copyright:
+            <a href="https://mdbootstrap.com/"> CESItachance.com</a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>
